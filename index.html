@@ -154,20 +154,24 @@
             <div class="one-line"></div>
             <h5>Interested in entering the insurtech space?</h5>
             <ul class="top-heading">
-              <li>Licensing <span>></span></li>
-              <li>Service Agreements <span>></span></li>
-              <li>Strategic Alliance <span>></span></li>
-              <li>Joint Venture <span>></span></li>
-              <li>Majority Investment <span>></span></li>
-              <li>Internal Accelerator and Incubator <span>></span></li>
-              <li>In-house Start-up & Acquisition <span>></span></li>
+              <li class="welcomeone-top">Licensing <span>></span></li>
+              <li class="welcomeone-top">Service Agreements <span>></span></li>
+              <li class="welcomeone-top">Strategic Alliance <span>></span></li>
+              <li class="welcomeone-top">Joint Venture <span>></span></li>
+              <li class="welcomeone-top">Majority Investment <span>></span></li>
+              <li class="welcomeone-top">
+                Internal Accelerator and Incubator <span>></span>
+              </li>
+              <li class="welcomeone-top">
+                In-house Start-up & Acquisition <span>></span>
+              </li>
             </ul>
             <h5>
               What are some key issues that strategics should be mindful of?
             </h5>
             <ul class="bottom-heading">
-              <li>IP considerations <span>></span></li>
-              <li>Data strategy <span>></span></li>
+              <li class="welcomeone-top">IP considerations <span>></span></li>
+              <li class="welcomeone-top">Data strategy <span>></span></li>
             </ul>
           </div>
         </div>
@@ -176,33 +180,41 @@
             <div class="two-line"></div>
             <h5>Interested in starting up a brand new insurtech operation?</h5>
             <ul class="top-heading">
-              <li>Service provider <span>></span></li>
-              <li>MGA/MGU <span>></span></li>
-              <li>Insurance carrier model <span>></span></li>
+              <li class="welcometwo-bottom">Service provider <span>></span></li>
+              <li class="welcometwo-bottom">MGA/MGU <span>></span></li>
+              <li class="welcometwo-bottom">
+                Insurance carrier model <span>></span>
+              </li>
             </ul>
             <h5>
               Interested in entering into the insurtech space as a risk-taker?
             </h5>
             <ul class="top-heading">
-              <li>Starting from scratch <span>></span></li>
-              <li>Acquiring a shell <span>></span></li>
-              <li>Entering as reinsurance <span>></span></li>
+              <li class="welcometwo-bottom">
+                Starting from scratch <span>></span>
+              </li>
+              <li class="welcometwo-bottom">
+                Acquiring a shell <span>></span>
+              </li>
+              <li class="welcometwo-bottom">
+                Entering as reinsurance <span>></span>
+              </li>
             </ul>
             <h5>
               What are some key regulatory issues insurtechs should be aware of?
             </h5>
             <ul class="top-heading">
-              <li>Anti-rebating <span>></span></li>
-              <li>AI <span>></span></li>
+              <li class="welcometwo-bottom">Anti-rebating <span>></span></li>
+              <li class="welcometwo-bottom">AI <span>></span></li>
             </ul>
             <h5>
               How do start-ups handle agreements with insurance carriers on
               insurtech?
             </h5>
             <ul class="bottom-heading">
-              <li>xxxxx <span>></span></li>
-              <li>xxxxx <span>></span></li>
-              <li>xxxxx <span>></span></li>
+              <li class="welcometwo-bottom">xxxxx <span>></span></li>
+              <li class="welcometwo-bottom">xxxxx <span>></span></li>
+              <li class="welcometwo-bottom">xxxxx <span>></span></li>
             </ul>
           </div>
         </div>
@@ -282,15 +294,17 @@
                 </p>
                 <h6 class="body-text-heading">Key Considerations:</h6>
                 <p class="licensing">
-                  <i class="fa-regular fa-circle"></i> <u>Licensing:</u>
-                  An MGA may be required to obtain licenses under the insurance
-                  laws of some or all of the states where it will conduct its
-                  business. Licensing requirements and exemptions differ from
-                  state to state. We recommend that a careful review be
-                  undertaken of the scope of the MGA's activities and the types
-                  of compensation that the MGA will receive in order to
-                  determine which licensing requirements, if any, will apply to
-                  the MGA.
+                  <i class="fa-regular fa-circle"></i>
+                  <label
+                    ><u>Licensing:</u> An MGA may be required to obtain licenses
+                    under the insurance laws of some or all of the states where
+                    it will conduct its business. Licensing requirements and
+                    exemptions differ from state to state. We recommend that a
+                    careful review be undertaken of the scope of the MGA's
+                    activities and the types of compensation that the MGA will
+                    receive in order to determine which licensing requirements,
+                    if any, will apply to the MGA.</label
+                  >
                 </p>
                 <p class="manage-para">
                   For example, licenses may be required in some states if the
@@ -333,12 +347,14 @@
                 </p>
                 <p class="licensing">
                   <i class="fa-regular fa-circle"></i>
-                  <u>Fronting Carrier:</u>
-                  An MGA will need establish a contractual relationship with a
-                  fronting carrier that will issue the policies sold through the
-                  MGA. This relationship will be critical to the MGA's
-                  operations, and, as a result, the fronting carrier will need
-                  to be vetted and selected with care.
+                  <label
+                    ><u>Fronting Carrier:</u> An MGA will need establish a
+                    contractual relationship with a fronting carrier that will
+                    issue the policies sold through the MGA. This relationship
+                    will be critical to the MGA's operations, and, as a result,
+                    the fronting carrier will need to be vetted and selected
+                    with care.</label
+                  >
                 </p>
                 <p class="manage-para">
                   Examples of criteria for selecting a fronting carrier include
@@ -477,11 +493,17 @@
         $(".menu_show_bg_width").addClass("menu_show_active");
         $(".navbarBar-icon").addClass("d-none");
         $(".dropdown-bar").addClass("d-block");
+        $(".desknavbar-navbar").removeClass("d-block");
+        $(".sidebar").css({ height: "" });
+        $(".welcome-three-wrapper").css({ height: "" });
       });
       $(".btn_Dublelick").click(function () {
         $(".dropdown-bar").removeClass("d-block");
         $(".menu_show_bg_width").removeClass("menu_show_active");
         $(".navbarBar-icon").removeClass("d-none");
+        $(".desknavbar-navbar").removeClass("d-block");
+        $(".sidebar").css({ height: "" });
+        $(".welcome-three-wrapper").css({ height: "" });
       });
       $(".welone-line").click(function () {
         $(".welcome-section").addClass("d-none");
@@ -494,52 +516,28 @@
         $(".menu_show_bg_width").removeClass("menu_show_active");
         $(".navbarBar-icon").removeClass("d-none");
         $(".dropdown-bar").removeClass("d-block");
-        $(".sidebar-top").css({
-          marginTop: "150px",
-          width: "",
-        });
-        $(".sidebar-top h6").css({
-          fontSize: "",
-        });
+        $(".sidebar-top").css({ marginTop: "150px", width: "" });
+        $(".sidebar-top h6").css({ fontSize: "" });
         $(".sidebar-bottom h6").css({
-          transition: "all 0.3s",
           fontSize: "24px",
+          transition: "all 0.3s",
         });
-        $(".sidebar-top small").css({
-          display: "none",
-        });
-        $(".sidebar-bottom").css({
-          width: "100%",
-        });
-        $(".sidebar-bottom small").css({
-          display: "none",
-        });
-
+        $(".sidebar-top small").css({ display: "none" });
+        $(".sidebar-bottom").css({ width: "70%" });
+        $(".sidebar-bottom small").css({ display: "none" });
         if ($(window).width() <= 1023) {
-          $(".sidebar-top").css({
-            marginTop: "80px",
-          });
-          $(".sidebar-bottom ").css({
-            marginTop: "35px",
-          });
-          $(".sidebar-top h6").css({
-            fontSize: "",
-          });
+          $(".sidebar-top").css({ marginTop: "80px" });
+          $(".sidebar-bottom ").css({ marginTop: "35px", width: "100%" });
+          $(".sidebar-top h6").css({ fontSize: "" });
           $(".sidebar-bottom h6").css({
             fontSize: "24px",
             transition: "all 0.3s",
           });
         }
         if ($(window).width() <= 481) {
-          $(".sidebar-top").css({
-            marginTop: "40px",
-          });
-          $(".sidebar-bottom ").css({
-            marginTop: "35px",
-          });
-          $(".sidebar-top h6").css({
-            fontSize: "",
-          });
+          $(".sidebar-top").css({ marginTop: "40px" });
+          $(".sidebar-bottom ").css({ marginTop: "35px" });
+          $(".sidebar-top h6").css({ fontSize: "" });
           $(".sidebar-bottom h6").css({
             fontSize: "18px",
             transition: "all 0.3s",
@@ -557,55 +555,27 @@
         $(".menu_show_bg_width").removeClass("menu_show_active");
         $(".navbarBar-icon").removeClass("d-none");
         $(".dropdown-bar").removeClass("d-block");
-        $(".sidebar-top").css({
-          marginTop: "150px",
-          width: "100%",
-        });
-        $(".sidebar-top h6").css({
-          fontSize: "24px",
-        });
-        $(".sidebar-bottom h6").css({
-          fontSize: "",
-          transition: "all 0.3s",
-        });
-        $(".sidebar-top small").css({
-          display: "none",
-        });
-        $(".sidebar-bottom ").css({
-          width: "",
-        });
-        $(".sidebar-bottom small").css({
-          display: "none",
-        });
+        $(".sidebar-top").css({ marginTop: "150px", width: "70%" });
+        $(".sidebar-top h6").css({ fontSize: "24px" });
+        $(".sidebar-bottom h6").css({ fontSize: "", transition: "all 0.3s" });
+        $(".sidebar-top small").css({ display: "none" });
+        $(".sidebar-bottom ").css({ width: "" });
+        $(".sidebar-bottom small").css({ display: "none" });
         if ($(window).width() <= 1023) {
-          $(".sidebar-top").css({
-            marginTop: "80px",
-          });
-          $(".sidebar-bottom ").css({
-            marginTop: "35px",
-          });
+          $(".sidebar-top").css({ marginTop: "80px", width: "100%" });
+          $(".sidebar-bottom ").css({ marginTop: "35px" });
+          $(".sidebar-bottom h6").css({ fontSize: "", transition: "all 0.3s" });
           $(".sidebar-top h6").css({
             fontSize: "24px",
             transition: "all 0.3s",
           });
-          $(".sidebar-bottom h6").css({
-            fontSize: "",
-            transition: "all 0.3s",
-          });
         }
         if ($(window).width() <= 481) {
-          $(".sidebar-top").css({
-            marginTop: "40px",
-          });
-          $(".sidebar-bottom ").css({
-            marginTop: "35px",
-          });
+          $(".sidebar-top").css({ marginTop: "40px" });
+          $(".sidebar-bottom ").css({ marginTop: "35px" });
+          $(".sidebar-bottom h6").css({ fontSize: "", transition: "all 0.3s" });
           $(".sidebar-top h6").css({
             fontSize: "18px",
-            transition: "all 0.3s",
-          });
-          $(".sidebar-bottom h6").css({
-            fontSize: "",
             transition: "all 0.3s",
           });
         }
@@ -622,57 +592,28 @@
         $(".menu_show_bg_width").removeClass("menu_show_active");
         $(".navbarBar-icon").removeClass("d-none");
         $(".dropdown-bar").removeClass("d-block");
-        $(".sidebar-top").css({
-          marginTop: "150px",
-          width: "",
-        });
-        $(".sidebar-top h6").css({
-          fontSize: "",
-          transition: "all 0.3s",
-        });
+        $(".sidebar-top").css({ marginTop: "150px", width: "" });
+        $(".sidebar-top h6").css({ fontSize: "", transition: "all 0.3s" });
+        $(".sidebar").css({ height: "" });
+        $(".welcome-three-wrapper").css({ height: "" });
         $(".sidebar-bottom h6").css({
           fontSize: "24px",
           transition: "all 0.3s",
         });
-        $(".sidebar-top small").css({
-          display: "none",
-        });
-        $(".sidebar-bottom").css({
-          width: "100%",
-        });
-        $(".sidebar-bottom small").css({
-          display: "none",
-        });
-
+        $(".sidebar-top small").css({ display: "none" });
+        $(".sidebar-bottom").css({ width: "70%" });
+        $(".sidebar-bottom small").css({ display: "none" });
         if ($(window).width() <= 1023) {
-          $(".sidebar-top").css({
-            marginTop: "80px",
-          });
-          $(".sidebar-bottom ").css({
-            marginTop: "35px",
-          });
-          $(".sidebar-top h6").css({
-            fontSize: "",
-            transition: "all 0.3s",
-          });
-          $(".sidebar-bottom h6").css({
-            fontSize: "24px",
-          });
+          $(".sidebar-top").css({ marginTop: "80px" });
+          $(".sidebar-bottom").css({ marginTop: "35px", width: "100%" });
+          $(".sidebar-top h6").css({ fontSize: "", transition: "all 0.3s" });
+          $(".sidebar-bottom h6").css({ fontSize: "24px" });
         }
         if ($(window).width() <= 481) {
-          $(".sidebar-top").css({
-            marginTop: "40px",
-          });
-          $(".sidebar-bottom ").css({
-            marginTop: "35px",
-          });
-          $(".sidebar-top h6").css({
-            fontSize: "",
-            transition: "all 0.3s",
-          });
-          $(".sidebar-bottom h6").css({
-            fontSize: "18px",
-          });
+          $(".sidebar-top").css({ marginTop: "40px" });
+          $(".sidebar-bottom ").css({ marginTop: "35px" });
+          $(".sidebar-top h6").css({ fontSize: "", transition: "all 0.3s" });
+          $(".sidebar-bottom h6").css({ fontSize: "18px" });
         }
       });
       $(".sidebar-bottom").click(function () {
@@ -686,83 +627,78 @@
         $(".menu_show_bg_width").removeClass("menu_show_active");
         $(".navbarBar-icon").removeClass("d-none");
         $(".dropdown-bar").removeClass("d-block");
-
-        $(".sidebar-top").css({
-          marginTop: "150px",
-          width: "100%",
-        });
-        $(".sidebar-top h6").css({
-          fontSize: "24px",
-          transition: "all 0.3s",
-        });
-        $(".sidebar-bottom h6").css({
-          fontSize: "",
-          transition: "all 0.3s",
-        });
-        $(".sidebar-top small").css({
-          display: "none",
-        });
-        $(".sidebar-bottom ").css({
-          width: "",
-        });
-        $(".sidebar-bottom small").css({
-          display: "none",
-        });
+        $(".sidebar-top").css({ marginTop: "150px", width: "70%" });
+        $(".sidebar-top h6").css({ fontSize: "24px", transition: "all 0.3s" });
+        $(".sidebar-bottom h6").css({ fontSize: "", transition: "all 0.3s" });
+        $(".sidebar-top small").css({ display: "none" });
+        $(".sidebar-bottom ").css({ width: "" });
+        $(".sidebar-bottom small").css({ display: "none" });
+        $(".sidebar").css({ height: "" });
+        $(".welcome-three-wrapper").css({ height: "" });
         if ($(window).width() <= 1023) {
-          $(".sidebar-top").css({
-            marginTop: "80px",
-          });
-          $(".sidebar-bottom ").css({
-            marginTop: "35px",
-          });
+          $(".sidebar-top").css({ marginTop: "80px", width: "100%" });
+          $(".sidebar-bottom ").css({ marginTop: "35px" });
           $(".sidebar-top h6").css({
             fontSize: "24px",
             transition: "all 0.3s",
           });
-          $(".sidebar-bottom h6").css({
-            fontSize: "",
-            transition: "all 0.3s",
-          });
+          $(".sidebar-bottom h6").css({ fontSize: "", transition: "all 0.3s" });
         }
         if ($(window).width() <= 481) {
-          $(".sidebar-top").css({
-            marginTop: "40px",
-          });
-          $(".sidebar-bottom ").css({
-            marginTop: "35px",
-          });
+          $(".sidebar-top").css({ marginTop: "40px" });
+          $(".sidebar-bottom ").css({ marginTop: "35px" });
           $(".sidebar-top h6").css({
             fontSize: "18px",
             transition: "all 0.3s",
           });
-          $(".sidebar-bottom h6").css({
-            fontSize: "",
-            transition: "all 0.3s",
-          });
+          $(".sidebar-bottom h6").css({ fontSize: "", transition: "all 0.3s" });
         }
       });
-      $(".top-heading li").click(function () {
+      $(".welcomeone-top").click(function () {
         $(".welcome-three-wrapper").addClass("d-block");
         $(".welcome-one-wrapper").removeClass("d-block ");
         $(".welcome-two-wrapper").removeClass("d-block");
         $(".bookmark-text").addClass("d-block");
         $(".sidebar-topic").addClass("d-block");
-        $(".desknavbar-navbar").addClass("d-block");
-        $(".desknavbar-navbar").addClass("d-block");
         $(".menu_show_bg_width").removeClass("menu_show_active");
         $(".navbarBar-icon").removeClass("d-none");
         $(".dropdown-bar").removeClass("d-block");
+        $(".welcome-three").css({ marginTop: "200px" });
+        $(".bookmark-text").css({ top: "162px" });
+        $(".welcome-three-heading").css({ top: "40px" });
+        if ($(window).width() <= 1023) {
+          $(".welcome-three").css({ marginTop: "0px" });
+          $(".bookmark-text").css({ top: "160px" });
+          $(".welcome-three-heading").css({ top: "40px" });
+        }
+        if ($(window).width() <= 767) {
+          $(".welcome-three").css({ marginTop: "0px" });
+          $(".bookmark-text").css({ top: "160px" });
+          $(".welcome-three-heading").css({ top: "40px" });
+        }
+        if ($(window).width() <= 481) {
+          $(".welcome-three").css({ marginTop: "0px" });
+          $(".bookmark-text").css({ top: "160px" });
+          $(".welcome-three-heading").css({ top: "40px" });
+        }
       });
-      $(".bottom-heading li").click(function () {
+      $(".welcometwo-bottom").click(function () {
         $(".welcome-three-wrapper").addClass("d-block");
         $(".welcome-one-wrapper").removeClass("d-block");
         $(".welcome-two-wrapper").removeClass("d-block");
         $(".bookmark-text").addClass("d-block");
         $(".sidebar-topic").addClass("d-block");
-        $(".desknavbar-navbar").addClass("d-block");
         $(".menu_show_bg_width").removeClass("menu_show_active");
         $(".navbarBar-icon").removeClass("d-none");
         $(".dropdown-bar").removeClass("d-block");
+        $(".welcome-three").css({ marginTop: "280px" });
+        $(".bookmark-text").css({ top: "244px" });
+        $(".welcome-three-heading").css({ top: "80px" });
+        if ($(window).width() <= 1023) {
+          $(".welcome-three").css({ marginTop: "0px" });
+          $(".bookmark-text").css({ top: "242px" });
+          $(".welcome-three-heading").css({ top: "80px" });
+        }
       });
       $(".back-button").click(function () {
         $(".welcome-three-wrapper").removeClass("d-block");
@@ -773,6 +709,32 @@
         $(".menu_show_bg_width").removeClass("menu_show_active");
         $(".navbarBar-icon").removeClass("d-none");
         $(".dropdown-bar").removeClass("d-block");
+        $(".sidebar-bottom").css({ width: "" });
+        $(".sidebar-top").css({ width: "70%" });
+        $(".sidebar").css({ height: "" });
+        $(".welcome-three-wrapper").css({ height: "" });
+      });
+      $(".bookmark-text").click(function () {
+        $(".desknavbar-navbar").addClass("d-block");
+        $(".menu_show_bg_width").removeClass("menu_show_active");
+        $(".navbarBar-icon").removeClass("d-none");
+        $(".dropdown-bar").removeClass("d-block");
+        $(".sidebar").css({ height: "calc(100vh - 139px)" });
+        $(".welcome-three-wrapper").css({ height: "calc(100vh - 139px)" });
+        if ($(window).width() <= 1023) {
+          $(".sidebar").css({ height: "100%" });
+          $(".welcome-three-wrapper").css({ height: "100%" });
+        }
+      });
+      $(".navbar-left").click(function () {
+        $(".welcome-three-wrapper").addClass("d-block");
+        $(".welcome-one-wrapper").addClass("d-none");
+        $(".welcome-two-wrapper").addClass("d-none");
+        $(".welcome-section").addClass("d-none");
+        $(".welcome-three").css({ marginTop: "280px" });
+        $(".bookmark-text").addClass("d-block");
+        $(".bookmark-text").css({ top: "251px" });
+        $(".sidebar-top").css({ marginTop: "150px", width: "" });
       });
     });
   </script>

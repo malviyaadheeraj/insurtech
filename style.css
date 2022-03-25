@@ -202,19 +202,19 @@
 
 /* MENU BAR START >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 .menu_show_bg_width {
-  background-color: #1b4d82;
-  transition: all 1s ease;
+  background-color: #1b4d82ec;
+  transition: all 0.9s ease;
   position: fixed;
   padding: 0px 20px;
   height: calc(100vh - 70px);
-  right: -700px;
+  right: -600px;
   top: 70px;
-  width: 700px;
+  width: 600px;
   z-index: 6666;
 }
 .menu_show_active {
   height: calc(100vh - 70px);
-  transition: all 1s ease;
+  transition: all 0.9s ease;
   z-index: 6666;
   right: 0;
   padding: 0px 20px;
@@ -250,8 +250,9 @@
   margin-bottom: 20px;
   margin-top: 20px;
   color: #fff;
-  padding: 20px;
-  background-color: #215892;
+  padding: 30px 20px;
+  background-color: #215892c0;
+  box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.1);
 }
 .menu_show_bg_bg_bg {
   margin: 20px 0px;
@@ -260,7 +261,7 @@
 }
 .menu_show_bg_p {
   color: #ffffff;
-  font-size: 16px;
+  font-size: 12px;
   font-weight: 500;
   margin-bottom: 0px;
 }
@@ -506,8 +507,8 @@
   color: #f5a741;
 }
 .welcome-three {
-  padding: 0px 30px;
-  margin-top: 280px;
+  padding: 0px 20px;
+  /* margin-top: 280px; */
 }
 .welcome-three .manage-para {
   font-size: 14px;
@@ -567,11 +568,12 @@
 }
 .welcome-three .licensing {
   font-size: 14px;
+  display: flex;
   margin-bottom: 0px;
 }
 .welcome-three .licensing i {
   color: #f5a741;
-  margin-right: 10px;
+  margin-right: 5px;
   font-size: 14px;
   margin-top: 5px;
 }
@@ -599,19 +601,21 @@
 .bookmark-text {
   display: none;
   position: absolute;
-  top: 242px;
   width: 160px;
+  cursor: pointer;
   left: -20px;
-  padding-left: 50px;
+  padding-left: 40px;
   color: black;
   border-bottom: 1px solid #f5a741;
   margin-bottom: 20px;
+  font-family: "Avenir-light";
 }
-.bookmark-text i {
+/* .bookmark-text i {
   font-size: 22px;
-}
+} */
 .bookmark-text label {
   font-size: 10px;
+  cursor: pointer;
 }
 .releted-links {
   border-top: 3px solid gray;
@@ -629,6 +633,16 @@
 /* WELCOME THREE SECTION END >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
 /* RESPONSIVE SIZE START*/
+
+@media (max-width: 1200px) {
+  .welcome-three-heading {
+    font-size: 20px;
+  }
+  .view-button {
+    padding: 5px 56px;
+  }
+}
+
 @media (max-width: 1023px) {
   .navbar-wrapper nav .navbar-right ul li {
     display: none;
@@ -720,9 +734,9 @@
     padding: 30px 0px 0px 0px;
   }
   .bookmark-text {
-    width: 50%;
+    width: 20%;
     text-align: left;
-    margin-left: 10px;
+    padding-left: 0px;
   }
 
   .weltwo-line,
@@ -749,6 +763,11 @@
   .menu_show_active {
     height: 100%;
     right: 0;
+  }
+  .bookmark-text {
+    width: 40%;
+    text-align: left;
+    padding-left: 0px;
   }
 }
 @media (max-width: 481px) {
