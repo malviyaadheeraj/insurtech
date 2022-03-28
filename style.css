@@ -64,10 +64,15 @@
 
 /* NAVBAR START >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 .navbar-wrapper {
+  width: 100%;
   height: 70px;
   display: flex;
   align-items: center;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  z-index: 9999;
+  background-color: white;
+  position: sticky;
+  top: 0;
 }
 .navbar-wrapper nav {
   display: flex;
@@ -76,8 +81,12 @@
 }
 .navbar-wrapper nav .navbar-left {
   display: flex;
-  width: 40%;
+  width: 12%;
+  cursor: pointer;
   align-items: center;
+}
+.navbar-wrapper nav .navbar-left:hover {
+  color: #00448d;
 }
 .navbar-wrapper nav .navbar-left h6 {
   margin-left: 8px;
@@ -180,7 +189,15 @@
   padding: 20px 0px 20px 30px;
 }
 .desknavbar-navbar {
-  display: none;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  z-index: -1;
+  transition: all 0.9s;
+}
+.desknavbar-navbarActive {
+  top: 70px;
+  z-index: 10;
 }
 .desknavber {
   display: flex;
@@ -613,9 +630,11 @@
 /* .bookmark-text i {
   font-size: 22px;
 } */
-.bookmark-text label {
+.bookmark-text small {
   font-size: 10px;
   cursor: pointer;
+  margin: 0;
+  padding: 0;
 }
 .releted-links {
   border-top: 3px solid gray;
